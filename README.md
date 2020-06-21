@@ -3,7 +3,7 @@
 
 ![Preview grid](./docs/grid.jpg)
 
-This dataset constains ~104k cropped MLP faces from Derpibooru. It was created by training a YOLOv3 network on annotated facial features from about 1500 faces.
+This dataset contains ~104k cropped MLP faces from Derpibooru. It was created by training a YOLOv3 network on annotated facial features from about 1500 faces.
 
 Rather than provide the cropped images, this repo contains CSV files with the bounding boxes of the detected faces from my trained network, and a script to download the images from Derpibooru and crop them based on these CSVs.
 
