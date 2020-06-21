@@ -13,6 +13,11 @@ The dimensions of the detected faces are shown in the following histogram:
 The distribution of characters is shown below:
 ![Characters](./docs/pony_counts.png)
 
+The list of images was filtered from the Derpibooru database using the following criteria:
+```py
+len(set(['safe', 'suggestive']).intersection(set(tags))) > 0 and len(set(['anthro', 'pony', 'pegasus', 'unicorn', 'alicorn', 'earth pony']).intersection(set(tags))) > 0 and score >= 25 and img_format.lower() in ['jpg', 'jpeg', 'png']
+```
+
 ## Running
 
 These instructions describe how to use this repository to prepare a dataset for training StyleGAN2.
