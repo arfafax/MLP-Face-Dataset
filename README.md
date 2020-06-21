@@ -33,10 +33,10 @@ Once this is done, run
 python3 crop.py
 ```
 to crop all of the images. The output images will be placed in directories according to their size:
-`downscale` for images > 1024x1024
-`waifu2x` for images between 512x512 and 1024x1024
-`waifu3x` for images between 341x341 and 512x512
-`waifu4x` for images smaller than 341x341
+* `downscale` for images > 1024x1024
+* `waifu2x` for images between 512x512 and 1024x1024
+* `waifu3x` for images between 341x341 and 512x512
+* `waifu4x` for images smaller than 341x341
 
 Run [waifu2x-chainer](https://github.com/tsurumeso/waifu2x-chainer) on each of these folders to upscale them to at least 1024x1024.
 
